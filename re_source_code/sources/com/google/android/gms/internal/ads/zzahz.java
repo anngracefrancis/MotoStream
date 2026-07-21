@@ -1,0 +1,43 @@
+package com.google.android.gms.internal.ads;
+
+import android.content.Context;
+import android.os.DeadObjectException;
+import android.os.IBinder;
+import android.os.IInterface;
+import android.os.Looper;
+import com.google.android.gms.common.internal.BaseGmsClient;
+import com.google.android.gms.common.util.VisibleForTesting;
+
+/* JADX INFO: loaded from: classes2.dex */
+@zzard
+public final class zzahz extends com.google.android.gms.ads.internal.zzc<zzaig> {
+    zzahz(Context context, Looper looper, BaseGmsClient.BaseConnectionCallbacks baseConnectionCallbacks, BaseGmsClient.BaseOnConnectionFailedListener baseOnConnectionFailedListener) {
+        super(zzasq.f(context), looper, 166, baseConnectionCallbacks, baseOnConnectionFailedListener, null);
+    }
+
+    @Override // com.google.android.gms.common.internal.BaseGmsClient
+    @VisibleForTesting
+    protected final /* synthetic */ IInterface createServiceInterface(IBinder iBinder) {
+        if (iBinder == null) {
+            return null;
+        }
+        IInterface iInterfaceQueryLocalInterface = iBinder.queryLocalInterface("com.google.android.gms.ads.internal.httpcache.IHttpAssetsCacheService");
+        return iInterfaceQueryLocalInterface instanceof zzaig ? (zzaig) iInterfaceQueryLocalInterface : new zzaih(iBinder);
+    }
+
+    public final zzaig e() throws DeadObjectException {
+        return (zzaig) super.getService();
+    }
+
+    @Override // com.google.android.gms.common.internal.BaseGmsClient
+    @VisibleForTesting
+    protected final String getServiceDescriptor() {
+        return "com.google.android.gms.ads.internal.httpcache.IHttpAssetsCacheService";
+    }
+
+    @Override // com.google.android.gms.common.internal.BaseGmsClient
+    @VisibleForTesting
+    protected final String getStartServiceAction() {
+        return "com.google.android.gms.ads.service.HTTP";
+    }
+}

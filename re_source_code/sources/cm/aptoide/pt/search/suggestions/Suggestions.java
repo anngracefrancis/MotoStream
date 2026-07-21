@@ -1,0 +1,12 @@
+package cm.aptoide.pt.search.suggestions;
+
+import java.util.List;
+
+/* JADX INFO: loaded from: classes.dex */
+public class Suggestions {
+    private List<String> data;
+
+    public List<String> getData() {
+        return this.data;
+    }
+}

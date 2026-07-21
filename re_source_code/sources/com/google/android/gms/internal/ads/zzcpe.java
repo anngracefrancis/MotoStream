@@ -1,0 +1,21 @@
+package com.google.android.gms.internal.ads;
+
+import android.content.Context;
+
+/* JADX INFO: loaded from: classes2.dex */
+public final class zzcpe implements zzdti<zzcpa> {
+    private final zzdtu<Context> a;
+
+    /* JADX INFO: renamed from: b, reason: collision with root package name */
+    private final zzdtu<zzbws> f15488b;
+
+    public zzcpe(zzdtu<Context> zzdtuVar, zzdtu<zzbws> zzdtuVar2) {
+        this.a = zzdtuVar;
+        this.f15488b = zzdtuVar2;
+    }
+
+    @Override // com.google.android.gms.internal.ads.zzdtu
+    public final /* synthetic */ Object get() {
+        return new zzcpa(this.a.get(), this.f15488b.get());
+    }
+}

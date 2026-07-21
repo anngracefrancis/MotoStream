@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>NSBluetoothAlwaysUsageDescription</key>
+	<string>MotoStream needs Bluetooth to connect to your Royal Enfield Tripper Pod for navigation updates.</string>
+	<key>NSLocalNetworkUsageDescription</key>
+	<string>MotoStream requires local network access to connect to the motorcycle dashboard.</string>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>MotoStream needs your location to continue providing navigation while the app is backgrounded or your phone is locked.</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>MotoStream needs your location to provide turn-by-turn navigation.</string>
+	<key>UIBackgroundModes</key>
+	<array>
+		<string>audio</string>
+		<string>processing</string>
+		<string>bluetooth-central</string>
+		<string>location</string>
+	</array>
+</dict>
+</plist>

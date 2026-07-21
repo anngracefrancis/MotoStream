@@ -1,0 +1,16 @@
+package com.google.android.gms.internal.ads;
+
+import android.os.RemoteException;
+import com.google.android.gms.ads.mediation.rtb.RtbAdapter;
+
+/* JADX INFO: loaded from: classes2.dex */
+@zzard
+public class zzapb {
+    public static zzaov a(String str) throws RemoteException {
+        try {
+            return new zzapc((RtbAdapter) Class.forName(str, false, zzapb.class.getClassLoader()).getDeclaredConstructor(new Class[0]).newInstance(new Object[0]));
+        } catch (Throwable unused) {
+            throw new RemoteException();
+        }
+    }
+}

@@ -1,0 +1,9 @@
+package c.g.b.k.m;
+
+/* JADX INFO: compiled from: BaselineDimensionDependency.java */
+/* JADX INFO: loaded from: classes.dex */
+class a extends g {
+    public a(p pVar) {
+        super(pVar);
+    }
+}
